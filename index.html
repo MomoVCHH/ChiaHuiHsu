@@ -1,455 +1,232 @@
-
-<html><head><meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-    
-<link rel="stylesheet" type="text/css" media="only screen and(color)">
-    
-<style>
-html, body {
-    background-color:#f9faf0;
-    height: 100vh;
-    width: 100vw; 
-    
-    } 
-  
- #media-container {
-    position: absolute;
-    margin-left: 2vw;
-    margin-right: 1vw;
-    margin-top: 0.1em;
-    margin-top: 0.1em;
-    height: 0;     
-}     
-#media-container iframe,
-#media-container img,    
-#media-container object,
-#media-container embed {
-    top: 0;
-    left: 0;
-    width: 15vw;
-    height: 14.5vh;
-    border: 0 none;
-} 
-       
-/*.InfoBox{
-    font-size: 0.65em;
-    display: block;
- 
-    overflow: hidden;
-  
-    }*/
-
-.menu{
-    padding-top: .2rem;
-    }
-    
-.menu li {   
-  
-  display: block;
-  vertical-align:middle;   
-  padding: 2rem;       
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;    
-  margin-bottom: 0.3rem;;
-  background-color: #ff9d00;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.menu a:link{
-   text-decoration: none;
-    color:  #031a2e;
-    }
-.menu a:visited{
-        color: #031a2e;
-    
-    }    
-
-.menu li:hover {
-  background-color: #edf2f7;
-  color: #031a2e;    
-  box-shadow: -5px -5px 20px 5px #ff9d00, 5px 10px 5px 2px white; 
-  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */   
-}
-    
-}
-    
-    
-    
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///Users/vanessa.chia-hui-hsu/Desktop/VCHH/ChiaHuiHsu/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 101 Template</title>
+        <!-- Bootstrap -->
+        <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+             <script src="./index_files/jquery.min.js"></script>
+             <script src="./index_files/bootstrap.min.js"></script>
+             <script src="./index_files/a076d05399.js"></script><link rel="stylesheet" href="./index_files/free.min.css" media="all">
+             <script language="JavaScript">
+                function openWeb() {
+                    window.open("https://github.com/MomoVCHH/ChiaHuiHsu");
+                }
+        
+                function openWinVR() {
+                    window.open("https://github.com/MomoVCHH/VR-Experiment-Design");
+                }
+        
+                function openWinMidi2Drum () {
+                    window.open("https://github.com/MomoVCHH/Midi2Drum");
+                }
+        
+                function open3DProgram () {
+                    window.open("https://github.com/MomoVCHH/3D-interactive-program");
+                }    
+            </script>
+        
+        <style>
+            
+            .jumbotron{
+                
+                background-image: url(background.jpg);
+                
+                text-align: center;
+            }
+            
+            #zusammenfassung{  
+                text-align: center;
+            }
+            
+            .card-img-top{              
+                width:100%;               
+            }
+            
+            #footer{       
+                background-color:aqua;
+                text-align: center;
+                padding-top: 1.5%;
+                padding-bottom: 1%;
+                width: 100%;
+            }
+            
+            img,iframe {
+                margin:10% 10% 0% 15%;
+                width: 70%;
+                height: 70%
+                display: block;
+            } 
+            
 </style>
+        
     
-<style type="text/css">
-    .grid-container{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        
-        grid-template-columns: 12vw 20vw 68vw;
-        grid-template-rows: 7vh 23vh 16vh 16vh 16vh 16vh 6vh;
-        background-color:floralwhite;
-        grid-gap: .1rem;
-        margin: 0px;
-        box-shadow: inset 0 0 2px 2px orange;
-        }  
-    .headOn{
-        font-size: 1em;
-        margin-top: -0.5em;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        text-align: center;
-        background-color: #f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;    
-        }
-        
-    .leftBox{
-        
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 8;
-        text-align: center;
-        background-color: #f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        }
-    
-     .describtionBox{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        font-size: 0.3rem;
-        background-color: #f9faf0;
-        font-size: 1.2rem;
-        color: #171c2e;
-        border: 1px solid rgba(0, 0, 0, 0.8); 
-        box-shadow: inset 0 0 3px 3px orange; 
-        }
-    
-     .rightMediaBox1{
-        grid-column-start:2 ;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        
-        text-align:start;
-        background-color: #f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 3px 3px orange; 
-        }
-        
-     .rightMediaBox2{
-        grid-column-start:2 ;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 3px 3px orange;
-        }
-      
-     .rightMediaBox3{
-        grid-column-start:2 ;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        }
-    
-    .rightMediaBox4{
-        grid-column-start:2 ;
-        grid-column-end: 3;
-        grid-row-start: 6;
-        grid-row-end: 7;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        font-size: 20px;
-        text-align:start;
-        background-color: #f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        }
-    
-    
-    
-    .rightBox1{
-        grid-column-start:3;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        font-size: 1.2rem;
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-       
-        }
-    
-     .rightBox2{
-        grid-column-start:3;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        font-size: 1.2rem;
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        
-        }
-     
-      .rightBox3{
-        grid-column-start:3;
-        grid-column-end: 4;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        font-size: 1.2rem;
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);  
-        box-shadow: inset 0 0 2px 2px orange;
-        
-        }
-    
-       .rightBox4{
-        grid-column-start:3;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 7;
-        margin-top: .5vh;
-        margin-left: .5vw;
-        font-size: 1.2rem;
-        text-align:start;
-        background-color:#f9faf0;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        
-        }
-   
-    .footer{    
-        font-size: 2rem;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        text-align: center;
-        background-color:#f9faf0;
-        padding-top: -1.5vh;
-        padding-bottom: 1vh;
-        margin-left: 0.5vw;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        box-shadow: inset 0 0 2px 2px orange;
-        
-        }
+    </head>
+<body data-spy="scroll" data-target="#navbar">
 
+        <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+  <div class="container-fluid">
+    <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Navigation ein-/ausblenden</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          
+       
+           
+            <li class="active collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="font-size: 175%;margin-left: -1.3rem;"> <a href="https://www.youtube.com/channel/UC_RzLSnXjxbDMmKe7WdmhtA" ;=""> <span class="glyphicon glyphicon-home"></span></a></li>       
+            <li class="active" style="font-size: 180%"> <a href="https://www.youtube.com/channel/UC_RzLSnXjxbDMmKe7WdmhtA" ;=""><span class="glyphicon glyphicon-envelope fab fa-youtube" aria-hidden="true"></span></a></li>
+            
+            <li class="active" style="font-size: 180%"> <a href="https://github.com/MomoVCHH" ;=""><span class="glyphicon glyphicon-envelope fab fa-github" aria-hidden="true"></span></a></li>
+            
+            <li class="active" style="font-size: 180%"><a href="javascript:alert(my e-mail address is: vanessa.chia-hui-hsu@hotmail.com;);"><span class="glyphicon glyphicon-envelope far fa-envelope" aria-hidden="true"></span></a></li>
+             
+  
+       
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="email">
+            <input type="password" class="form-control" placeholder="passwort">
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+      </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        
+<div class="jumbotron" id="jumbotron">
+    <div class="container" style="font-family:sans-serif; margin-top: 6rem;text-align: left;padding: 1% 1% 1% 1%;">
+      
+
+        <h4 style="font-family:sans-serif">Hello, I'm Chia-Hui, you can also call me Vanessa. I am a music computer scientist and a developer. I am very interested in digital <br><br>technology,audio and art. On this website, you can see some of my projects' videos and their describtions. If you want to know more, you can<br><br> visit my GitHub website or contact me.</h4>    
+        
+	        <p style="margin-top: 3.5rem;text-align: center;font-family:inherit;">"All the beautiful things in the world are the fruits of creativity"</p>
+                       
+     </div>
+</div>
+        
+<div class="container" id="mehrInfo">
     
-   
-    
+    <div class="row" id="zusammenfassung">
+        
+        <h1>Project Set</h1>
+        <hr style="width: 100%;margin-top: 0%;">
+    </div>
+        
+        
+</div>  
+        
+<div class="row">
     
   
-    
-img,
-iframe {
-    width: 12%;
-    height: 14.5%;        
-    position: absolute; 
-    min-width: 10vw;
-    overflow: hidden;
-    background-size: cover;
-    margin:1px 1px 1px 1px;
-    display: block;
-} 
-   
-#projectsText{
- margin-left: 18%;   
- font-size: 68%; 
-    white-space:normal;
-
-     
-</style> 
-<script language="JavaScript">
-         
-        function openWin() {
-        window.open("https://github.com/MomoVCHH/VanessaChiaHuiHsu");
-        }
-        
-        function openWinVR() {
-        window.open("https://github.com/MomoVCHH/VR-Experiment-Design");
-        }
-        
-        function openWinMidi2Drum () {
-        window.open("https://github.com/MomoVCHH/Midi2Drum");
-        }
-        
-        function open3DProgram () {
-        window.open("https://github.com/MomoVCHH/3D-interactive-program");
-        }    
-     </script>
-
-   
-</head>
-
-    
-<body>
-    
-   
-    
-    
-    
-    <div class="grid-container">
-        <div class="headOn">
-               <h2 style="color: #171c2e;text-align: center; margin-top: 1rem;">Vanessa/ Chia-Hui's Projects</h2>
-        </div>
-        
-                
-        <div class="leftBox">
-           
-             <div class ="menu"; style="font-family:inherit; width: 100%; height: 100%;">
-                 <li style="font-size:100%;"><a href="https://github.com/MomoVCHH">GitHub</a></li>
-                    
-                    <li style="font-size:100%;"><a href="https://www.youtube.com/channel/UC_RzLSnXjxbDMmKe7WdmhtA">YouTube</a></li>
-                    
-                     
-             
-                     <li style="font-size:100%;"><a href="javascript:alert('my e-mail address is: vanessa.chia-hui-hsu@hotmail.com');">Mail</a></li> 
-               
-                 
-                
-              
-            </div>
-
-        </div>  
-           
-        <div class ="describtionBox"style="border-radius: 1rem;">
-            <div class = "describtionText" style="font-size: 80%;">            
-            <p style="margin: 3vh 2vw 1vh 2vw;">Hello, I'm Chia-Hui, you can also call me Vanessa. I am a music computer scientist and a developer. I am very interested in digital technology, audio and art. On this website, you can see some of my projects' videos and their describtions. If you want to know more, you can visit my GitHub website or contact me.</p> 
-           
-            <div style="margin-left: 2vw;">
-	        Technology brings convenience and comfort to human life, and also effectively changes human life.
-            </div>
-            <p style="text-align: center;margin-top: 2vh;">
-            "All the beautiful things in the world are the fruits of creativity"
-                         
-         </div>
-        </div>      
-       
-        
-        <div class="rightMediaBox1" style="border-radius:1rem;">  
-            <div id="media-container" style="float: left;float: right; overflow:inherit;">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/oC0dJ4JNlAc"></iframe>
-          </div>
-        </div>
-        
-        <div class="rightBox1"> 
-            
-                 <div class="InfoBox" style="position: absolute;margin-left: 1.5vw; margin-right: -0.5vw; margin-top: -1.1vh; margin-bottom: 1vh; font-size: 70%; display:inline-block;overflow-y: scroll;">
-                <h4 style="text-decoration: underline; color: black;">VR-experiment-program</h4>
-                <p style="margin-top: -1em;">I created the VR prototyp for the master thesis' experiment. It is written in C#. With Unity Engine and Google Resonance SDK and some Plugins, I created the virtual environment and audio effects (2D and 3D sound effects).And it was made according to the principles of gamification. Due to the visual and acoustic simulation design in the virtual environment, the experimental participants can immerse  in another world.</p>
-                  <div style="margin-top: -1.2vh;">
-                 <form>
-                        <input type="button" value="See More" onclick="openWinVR()" style="width: 6vw; height: 2vh; font-size: 0.5rem;border-radius:1rem;">
-                    </form>
-                     </div>
-                </div>
-                  
-          </div>
-                 
-       
-        <div class="rightMediaBox2" style="border-radius: 1rem;">
-             <div id="media-container" style="float: left;float: right; overflow:inherit;">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/J74XRFN-LnY" ></iframe>
-                 </div>
-     
-         </div>
-        
-        <div class="rightBox2">
-        
-            <div class="InfoBox" style="position: absolute;margin-left: 1.5vw; margin-right: -0.5vw; margin-top: -1.1vh; margin-bottom: 1vh; font-size: 70%; ">
-                <h4 style="text-decoration: underline; color: black;">Midi2Drum</h4>
-                <p style="margin-top: -2vh;">Users only need to input their work's album profil, song's name, author's name, and a MIDI file into the generator. Through the conversion of the generator, the imported files will be automatically converted to the suitable file format which can be directly used in "Into The Rythm". Background Music and drum sounds will be analyzed, seperated and converted into wav format.  
-                The MIDI information will be converted with the help of TiMidity++-2.14.0 and a self-created XML parser written in Java.</p>
-                  <div style="margin-top: -1.4vh;">       
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <iframe width="560" height="315" src="./index_files/oC0dJ4JNlAc.html"></iframe>
+      <div class="caption">
+        <h4 style="text-decoration: underline; color: black;text-align: center;">VR-experiment-program</h4>
+        <p style="margin-left: 3%;margin-right: 3%;">I created the VR prototyp for the master thesis' experiment. It is written in C#. With Unity Engine and Google Resonance SDK and some Plugins, I created the virtual environment and audio effects (2D and 3D sound effects).And it was made according to the principles of gamification. Due to the visual and acoustic simulation design in the virtual environment, the experimental participants can immerse  in another world.<br><br></p>
+          
+ 
                     <form>
-                    <input type="button" value="See More" onclick="openWinMidi2Drum()" style="width: 6vw; height: 2vh; font-size: 0.5rem;border-radius:1rem;">
+                        <input type="button" value="See More" onclick="openWinVR()" style="border-radius:1rem;margin-left: 40%;margin-top: -10%;">
                     </form>
-                     </div>
-                </div>
-        
-        </div>
-       
-                   
-         <div class="rightMediaBox3" style="border-radius: 1rem;">
-                <div id="media-container" style="float: left;float:right; overflow:inherit;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9IievIvZPI4" ></iframe>
-                 </div>   
-            </div>
-        
-        <div class="rightBox3">
-               <div class="InfoBox"style="position: absolute;margin-left: 1.5vw; margin-right: -0.5vw; margin-top: -1.1vh; margin-bottom: 1vh; font-size: 70%; ">
-                <h4 style="text-decoration: underline; color: black;">3D-interactive-program</h4>
-                <p style="margin-top: -1rem;">Through the keys of the computer, the user can control the movement of the ball and its shape. This is a work made according to the reward and punishment mechanism. The user gets one point for collecting the correct items, and loses one point for the wrong objects.The goal is to get ten points.</p>
-                  <div style="margin-top: -1.2vh;">       
-                 <form>
-                        <input type="button" value="See More" onclick="open3DProgram()" style="width: 6vw; height: 2vh; font-size: 0.5rem;border-radius:1rem;">
-                    </form>
-                     </div>
-                </div>
-            </div>     
-        
-              
-        <div class="rightMediaBox4" style="border-radius: 1rem;">
-                   <div id="media-container" style="float: left;float: right; overflow:inherit;">
-                        
-                    <img width="560" height="315" src="https://github.com/MomoVCHH/ChiaHuiHsu/blob/master/theWeb.png?raw=true"/> 
-                   </div>
-            
-                  
-                 </div>
-        
-     
-        <div class="rightBox4">
-               <div class="InfoBox" style="position: absolute;margin-left: 1.5vw; margin-right: -0.5vw; margin-top: -1.1vh; margin-bottom: 1vh; font-size: 70%;">
-                <h4 style="text-decoration: underline; color: black;">Web-Development</h4>
-                <p style="margin-top: -1em;">This web site is one of my works. It is written in HTML5 and CSS and JavaScript. If   you want to see the code, please click "See More".</p>
-                 <div style="margin-top: -1.2vh;">        
-                 <form>
-                        <input type="button" value="See More" onclick="openWin()" style="width: 6vw; height: 2vh; font-size: 0.5rem;border-radius:1rem;">
-                    </form>
-                     </div>
-                </div>
-                          
-            </div> 
-                
-                            
-        <div class="footer" style="border-radius: 1rem;">
-            <p style="margin-top: 1.5vh; font-size: 45%">Copyright © 2019 Vanessa.Chia-Hui Hsu. All rights reserved</p>
-            
-            </div>
-        
+      </div>
+    </div>
+  </div>
     
-     </div>
-                          
-</body>
+  
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <iframe width="560" height="315" src="./index_files/J74XRFN-LnY.html"></iframe>
+      <div class="caption">
+          
+        <h4 style="text-decoration: underline; color: black;text-align: center;">Midi2Drum</h4>
+        <p style="margin-left: 3%;margin-right: 3%;">Users only need to input their work's album profil, song's name, author's name, and a MIDI file into the generator. Through the conversion of the generator, the imported files will be automatically converted to the suitable file format which can be directly used in "Into The Rythm". Background Music and drum sounds will be analyzed, seperated and converted into wav format.  
+                The MIDI information will be converted with the help of TiMidity++-2.14.0 and a self-created XML parser written in Java.</p>
+          
+                 <form>
+                        <input type="button" value="See More" onclick="openWinMidi2Drum()" style="border-radius:1rem;margin-left: 40%;">
+                    </form>
+        
+   
+      </div>
+    </div>
+  </div>
+   
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <iframe width="560" height="315" src="./index_files/9IievIvZPI4.html"></iframe>
+      <div class="caption">
+          
+        <h4 style="text-decoration: underline; color: black;text-align: center;">3D-interactive-program</h4>
+        <p style="margin-left: 3%;margin-right: 3%;">Through the keys of the computer, the user can control the movement of the ball and its shape. This is a work made according to the reward and punishment mechanism. The user gets one point for collecting the correct items, and loses one point for the wrong objects.The goal is to get ten points.<br><br><br><br></p>
+         
+                 <form>
+                        <input type="button" value="See More" onclick="open3DProgram ()" style="border-radius:1rem;margin-left: 40%;">
+                    </form>
+   
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <iframe width="560" height="315" src="./index_files/saved_resource.html"></iframe>
+      <div class="caption">
+          
+        <h4 style="text-decoration: underline; color: black;text-align: center;"></h4>
+        <p style="margin-left: 3%;margin-right: 3%;"> </p>
+   
+      </div>
+    </div>
+  </div>
+   
+ <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img width="560" height="400" src="./index_files/theWeb.png"> 
+      <div class="caption">
+          
+        <h4 style="text-decoration: underline; color: black;text-align: center;">Web-Development</h4>
+        <p style="margin-left: 3%;margin-right: 3%;">This web site is one of my works. It is written in HTML5 and CSS and JavaScript. If   you want to see the code, please click "See More".<br><br><br><br><br><br><br><br></p>
+                 <form>
+                        <input type="button" value="See More" onclick=" openWeb()" style="border-radius:1rem;margin-left: 40%;margin-top: -10%;">
+                    </form>
+        </div>
+    </div>
+  </div>
+    
+   
+</div>    
+        
+<div class="container" id="footer">
+        
+    <div class="row">
+    
+        <p>Copyright © 2019 Vanessa.Chia-Hui Hsu. All rights reserved</p>
+    
+    </div>
+        
+</div>        
+        
+        
 
-</html>
+
+    
+</body></html>
