@@ -7,15 +7,14 @@
         <title>website</title>
         <!-- Bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-      
 	    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
         
+        <!-- Font Awesome 5 -->
         <script src="https://kit.fontawesome.com/56a7f05e01.js" crossorigin="anonymous"></script>
         
         <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
       
         <script language="JavaScript">
                 function openWeb() {
@@ -45,8 +44,7 @@
         </script>    
         
         
-        <style>
-            
+        <style>  
             .jumbotron{
                 
                 background-image: url(background.jpg);
@@ -56,8 +54,7 @@
             
             #zusammenfassung{
                 
-                text-align: center;
-                
+                text-align: center;   
             }
             
             .card-img-top{
@@ -71,16 +68,15 @@
                 text-align: center;
                 padding-top: 2vh;
                 padding-bottom: 0.5vh;
-             
                 width: 100%; 
             }
             
             li:hover{
                 background-color:#dcefdc;
             } 
-
         </style>
     </head>
+     
 <body data-spy="scroll" data-target="#navbar">
 
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
@@ -93,7 +89,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    
     </div>
 
     <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
@@ -112,9 +107,8 @@
         <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
         </div>
-      </form>
-      </ul>
-        
+        </form>
+      </ul>    
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -122,14 +116,8 @@
 <div class="jumbotron" id="jumbotron">
     <div class="container" style="margin-top: 5%; text-align:inherit;">
       <h4 style="line-height: 3rem;">On this website, you can see some of my previous private projects. If you would like to know more, you can visit my GitHub website or contact me, thank you !</h4>    
-      
-          
-        
-        <form class="form-inline"> 
-       
-            
 
-    
+        <form class="form-inline"> 
         </form> 
      </div>
 </div>
@@ -139,12 +127,8 @@
     <div class="row" id="zusammenfassung">
         
         <h2 style="font-family:sans-serif; margin-top:-1vh;">* Project set *</h2>
-        <p class="lead"></p><hr style="margin-bottom: 2%;">
-        
+        <p class="lead"></p><hr style="margin-bottom: 2%;">     
     </div>
-        
-        
-
 </div>  
         
 <div class="row">
@@ -157,40 +141,42 @@
                 <form>
                     <input type="button" value="See More" onclick="openWeb ();"  style="border-radius:1rem;margin-left: 46%;background-color:yellowgreen;">
                 </form>  
-      </div>
+       </div>
+     </div>
     </div>
-  </div>
     
     <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
+     <div class="thumbnail">
        <div class="embed-responsive embed-responsive-16by9" >
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oC0dJ4JNlAc" allowfullscreen></iframe>
-                </div>
-      <div class="caption">
+       </div>
+         
+       <div class="caption">
            
         <h3 style="text-align: center;">VR-Experiment-Design</h3>
         <p>I created this VR prototype for an experiment in my master thesis. It is written in C#. For developing this work, I used the Unity Engine and Google Resonance SDK and some plugins. This work contains visual and audio effects (2D and 3D sound effects). It is created based on the gamification principle.Due to the visual and acoustic simulation design in the virtual environment, the experimental participants can immerse in another world.</p><br>
-           <form>
+                  <form>
                     <input type="button" value="See More" onclick="openWinVR()"  style="border-radius:1rem;margin-left: 40%;background-color:yellowgreen;">
-                    </form>
+                  </form>
+        </div>
+       </div>
       </div>
-    </div>
-  </div>
     
     <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
+     <div class="thumbnail">
        <div class="embed-responsive embed-responsive-16by9" >
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J74XRFN-LnY" allowfullscreen></iframe>
-                </div>
-      <div class="caption">
+       </div>
+         
+       <div class="caption">
         <h3 style="text-align: center;">Midi2Drum</h3>
         <p>Users only need to enter their work's album profil, song's name, author's name, and a MIDI file into the generator. Through the conversion of the generator, the imported files will be automatically converted to the suitable file format which can be directly used in "Into The Rythm". Background music and drum sounds will be analyzed, separated and converted into wav format. The MIDI information will be converted with the help of TiMidity++-2.14.0 and a self-created XML parser written in Java.</p>
                     <form>
                     <input type="button" value="See More" onclick="openWinMidi2Drum ()" style="border-radius:1rem;margin-left: 40%;background-color:yellowgreen;">
                     </form>
+       </div> 
       </div>
-    </div>
-  </div>
+     </div>
 </div>
     
 <div class="row">
@@ -213,7 +199,7 @@
     </div>  
   </div>
     
-    <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="embed-responsive embed-responsive-16by9" >
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9IievIvZPI4" allowfullscreen></iframe>
@@ -222,46 +208,34 @@
            
         <h3 style="text-align: center;">3D interactive program</h3>
         <p>Through the computer keyboards, the user can control the movement of the ball and its shape. This is a work made according to the reward and punishment mechanism. The user gets one point by the collecting a right object and loses one point by collecting a wrong object. The goal is to get ten points.</p> <br>
-           <form>
+                    <form>
                     <input type="button" value="See More" onclick="open3DProgram ()"  style="border-radius:1rem;margin-left: 40%;background-color:yellowgreen;">
                     </form>
-                 <br> <br>
-      </div>
-    </div>
+           <br> <br>
+       </div>
+     </div>
   </div>
     
-    <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
        <div class="embed-responsive embed-responsive-16by9" >
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hsWelrJZM5g" allowfullscreen></iframe>
-                </div>
+       </div>
       <div class="caption">
         <h3 style="text-align: center;">MyMap</h3>
         <p>This App was created using the Google Map Places API. The user can see his current location on the map and the locations of the nearby buildings (hospitals, banks, supermarkets, restaurants) and their information. Another function is, if the user types a city name in the search field and then presses the search button, he can see the city's location on the map. In the video, this app is displayed on the emulator, so the user initial location (the Google's headquarters) is showed on the map.</p>
-          <form>
+                    <form>
                     <input type="button" value="See More" onclick="openMap ()" style="border-radius:1rem;margin-left: 40%;background-color:yellowgreen;">
-                    </form>
-          
+                    </form>    
       </div>
     </div>
-  </div>
+   </div>
 </div>    
         
 <div class="container" id="footer">
-        
     <div class="row">
- 
         <p>Copyright © 2019 All rights reserved</p>
-    
     </div>        
 </div>        
-  
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script>
-
-        </script>
     </body>
 </html>
